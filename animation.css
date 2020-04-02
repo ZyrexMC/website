@@ -1,0 +1,15 @@
+#spin {
+    color: aqua;
+  }
+
+  #spin:after {
+    content:"";
+    animation: spin 4s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { content: "Gamer"; }
+    33.33% { content: "Believer"; }
+    66.66% { content: "Legend"; }
+    99.99% { content: "Player";}
+  }

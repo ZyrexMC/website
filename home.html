@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script data-ad-client="ca-pub-8936858637612449" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyrex - Home</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="functions.js"></script>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <img src="logo-of-site.png" class="img">
+
+
+<div class="absolute">
+    <nav class="nav">
+        <a href="home.html" class="nav-item is-active" active-color="orange">Home</a>
+        <a href="about.html" class="nav-item" active-color="green">About</a>
+        <a href="shop.html" class="nav-item" active-color="blue">Shop</a>
+        <a href="location.html" class="nav-item" active-color="red">Location</a>
+        <a href="contact.html" class="nav-item" active-color="rebeccapurple">Contact</a>
+    
+    <span class="nav-indicator"></span>
+      </nav>
+    </div>
+      <img id="cursor" src="osx_cursor.png" style="display: none; opacity: 0.5; position: absolute;">
+<canvas id="canvas" style="left: 0; position: absolute; top: 0;" height="100" width="100"></canvas>
+<script src="jquery.min.js"></script>
+<script>
+  $(function() {
+    var count;
+    var timer;
+    //the dark black heart of the mouse cursor
+    var coreOffsets = [
+      {x: 2, y: 2},
+      {x: 9, y: 9},
+      {x: 8, y: 15},
+      {x: 1, y: 14}
+    ];
+    //the hard white shell of the mouse cursor
+    var outlineOffsets = [
+      {x: 1, y: 0},
+      {x: 11, y: 10},
+      {x: 9, y: 15},
+      {x: 8, y: 16},
+      {x: 1, y: 14}
+    ];
+    var last = {
+      x: 0,
+      y: 0
+    };
+    $('body').mousemove(function(e) {
+      if (timer) {
+        clearTimeout(timer);
+      }
+      var offset = {
+        x: e.pageX - last.x,
+        y: e.pageY - last.y
+      };
+
+      document.getElementById('canvas').height = window.innerHeight;
+      document.getElementById('canvas').width = window.innerWidth;
+      var c = document.getElementById('canvas').getContext('2d');
+
+      for (var i = 0; i < coreOffsets.length; i++) {
+        var off1 = coreOffsets[i];
+        var off2 = coreOffsets[(i + 1) % coreOffsets.length];
+        c.beginPath();
+        c.fillStyle = "rgba(0, 0, 0, 0.25)";
+        c.moveTo(last.x + off1.x, last.y + off1.y);
+        c.lineTo(last.x + off2.x, last.y + off2.y);
+        c.lineTo(e.pageX + off2.x, e.pageY + off2.y);
+        c.lineTo(e.pageX + off1.x, e.pageY + off1.y);
+        c.lineTo(last.x + off1.x, last.y + off1.y);
+        c.fill();
+        c.closePath();
+      }
+
+      last.x = e.pageX;
+      last.y = e.pageY;
+
+      timer = setTimeout(function() {
+        //document.getElementById('canvas').width = 799;
+        //document.getElementById('canvas').width = 800;
+      }, 20);
+    });
+    document.getElementById('canvas').height = window.innerHeight;
+    document.getElementById('canvas').width = window.innerWidth;
+  });
+
+</script>
+
+</head>
+<body> 
+<div class="txt"><font size="8"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Welcome To <br> Zyrex's GamerZone!</font> </div>
+
+
+
+
+<div class="row">
+  
+  <div class="column">
+    <img src="game logos/mc.png" alt="Minecraft" style="width:70%">
+  </div>
+  <div class="column">
+    <img src="game logos/fortnite.jpg" alt="Fortnite" style="width:70%">
+  </div>
+  <div class="column">
+    <img src="game logos/apex.png" alt="Apex Legends" style="width:70%">
+  </div>
+  <div class="column">
+    <img src="game logos/League.png" alt="League of Legends" style="width:70%">
+  </div>
+</div>
+
+<div class="overlay"> <a href="https://www.youtube.com/channel/UCCfLiIeLNmHvUuhb87zNNVA" target="_blank"><img src="logo.jpg" alt="logo" height="50" width="50"></a> </div>
+<div class="transitions"> <font size="8">  <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>  
+
+  <link rel="stylesheet" href="animation.css">
+  <b> <p>You are a <span id="spin"></span>!</p></b>
+
+</font> </div>
+
+<div class="txt"><font size="7"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  We Offer</font></div>
+<div class="txt">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="devices/computer.png" alt="computer" height=200 width=300>
+<img src="devices/internet.png" alt="internet" height="200" width="250">
+<img src="devices/playstation.png" alt="playstation" height="200" width="250">
+<img src="devices/xbox.png" alt="xbox" height="200" width="200">
+<font size="7"> <br> Gaming Computers, Playstation & Xbox,<br> And fast internet speeds</font>
+</div>
+</body>
+</html>
+  
